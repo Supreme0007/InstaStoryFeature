@@ -15,6 +15,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .card{
@@ -25,6 +26,8 @@ body{
     border: 2px solid black;
     position: relative;
     overflow: hidden;
+    object-fit: cover;
+    object-position: center;
 }
 
 .storiyan{
@@ -36,6 +39,7 @@ body{
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
+    
 }
 
 .storiyan::-webkit-scrollbar{
@@ -50,6 +54,7 @@ body{
     overflow: hidden;
     display: inline-block;
     margin-right: 5px;
+    
 }
 
 .story img{
@@ -66,4 +71,19 @@ body{
     background-position: center;
     position: absolute;
     display: none;
+}
+
+.pic{
+    left: 50.5%;
+    top: 60%;
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    
+}
+
+.pic img{
+    width: 255px;
+    height: 280px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
